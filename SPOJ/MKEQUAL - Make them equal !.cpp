@@ -2,44 +2,25 @@
 using namespace std;
 
 int main() {
-	
-	// your code here
-
     int t;
-
-    cin>>t;
-
+    scanf("%d",&t);
     while(t--)
-
     {
-
-        int n;
-
-        cin>>n;
-
-        int temp,i;
-
-        long long int s=0;
-
-        for(i=0;i<n;i++)
-
+        long int N,i;
+		scanf("%ld",&N);
+        long int temp;
+        long long int sum=0;
+        for(i=0;i<N;i++)
         {
-            cin>>temp;
-
-            s=s+temp;
-
+            scanf("%ld",&temp);
+            sum+=temp;
         }
 
-        if(s%n==0)
-
-            cout<<n<<endl;
+        if(sum%N==0)
+			printf("%ld\n",N);
 
         else
-
-            cout<<n-1<<endl;
-
-
-
+			printf("%ld\n",N-1);
     }
 
     return 0;
